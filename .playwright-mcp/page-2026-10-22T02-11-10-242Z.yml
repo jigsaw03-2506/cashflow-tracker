@@ -1,0 +1,12 @@
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - button "Switch to English" [ref=e4] [cursor=pointer]: EN
+    - generic [ref=e6]:
+      - heading "ငွေစာရင်း" [level=1] [ref=e12]
+      - paragraph [ref=e13]: ဆက်လက်ရန် စကားဝှက်ကို ရိုက်ထည့်ပါ။
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - text: စကားဝှက်
+          - textbox "စကားဝှက်" [active] [ref=e16]
+        - button "ဝင်ရန်" [disabled]
+  - alert [ref=e17]

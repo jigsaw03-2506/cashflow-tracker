@@ -1,0 +1,140 @@
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e24] [cursor=pointer]
+  - alert [ref=e17]: ကျွန်ုပ်၏ ငွေကြေး
+  - generic [ref=e28]:
+    - banner [ref=e29]:
+      - generic [ref=e30]:
+        - link "ငွေစာရင်း" [ref=e31] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e38]:
+          - button "Switch to English" [ref=e39] [cursor=pointer]: EN
+          - button "အမှောင်" [ref=e40] [cursor=pointer]
+          - button "ပြန်လည်ဖတ်ရန်" [ref=e47] [cursor=pointer]
+          - button "ထွက်ရန်" [ref=e53] [cursor=pointer]
+      - navigation "စာမျက်နှာများ" [ref=e57]:
+        - link "ပင်မ" [ref=e58] [cursor=pointer]:
+          - /url: /
+        - link "လူများ" [ref=e62] [cursor=pointer]:
+          - /url: /people
+        - link "အသုံးစာရင်း" [ref=e68] [cursor=pointer]:
+          - /url: /spending
+    - main [ref=e71]:
+      - region [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - heading "ကျွန်ုပ်၏ ငွေကြေး" [level=1] [ref=e75]
+            - paragraph [ref=e76]: ကိုယ်ပိုင်လက်ကျန်ငွေနှင့် အကြွေးလက်ကျန်များ
+          - generic [ref=e77]:
+            - button "လူအမည်ထည့်ရန်" [ref=e78] [cursor=pointer]
+            - button "ငွေထုတ်ရန်" [ref=e80] [cursor=pointer]
+            - button "ငွေထည့်ရန်" [ref=e82] [cursor=pointer]
+        - generic [ref=e84]:
+          - generic [ref=e87]:
+            - paragraph [ref=e88]: လက်ရှိရှိသော စုစုပေါင်းငွေ
+            - paragraph [ref=e89]: 60,500,000 Ks
+          - generic [ref=e95]:
+            - paragraph [ref=e96]: E-money စုစုပေါင်း
+            - paragraph [ref=e97]: 10,500,000 Ks
+          - generic [ref=e102]:
+            - paragraph [ref=e103]: ငွေသား စုစုပေါင်း
+            - paragraph [ref=e104]: 50,000,000 Ks
+      - region [ref=e108]:
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - heading "ငွေစာရင်းလက်ကျန်များ" [level=2] [ref=e111]
+            - paragraph [ref=e112]: ချေးငွေနှင့် ပြန်ဆပ်ငွေများအလိုက် လက်ကျန်ကို ပြင်ဆင်ပေးမည်။
+          - button "အကောင့်အသစ်" [ref=e113] [cursor=pointer]
+        - generic [ref=e115]:
+          - generic [ref=e117]:
+            - paragraph [ref=e123]: လက်ငင်းငွေ
+            - paragraph [ref=e124]: Thwe Thwe Tint
+            - paragraph [ref=e125]: 50,000,000 Ks
+            - generic [ref=e126]:
+              - button "ငွေထည့်ရန်" [ref=e127] [cursor=pointer]
+              - generic [ref=e129]:
+                - button "ပြင်ဆင်ရန်" [ref=e130] [cursor=pointer]
+                - button "သိမ်းဆည်းရန်" [ref=e134] [cursor=pointer]
+          - generic [ref=e139]:
+            - paragraph [ref=e144]: KBZ ဘဏ်
+            - paragraph [ref=e145]: Thwe Thwe Tint
+            - paragraph [ref=e146]: 10,500,000 Ks
+            - generic [ref=e147]:
+              - button "ငွေထည့်ရန်" [ref=e148] [cursor=pointer]
+              - generic [ref=e150]:
+                - button "ပြင်ဆင်ရန်" [ref=e151] [cursor=pointer]
+                - button "သိမ်းဆည်းရန်" [ref=e155] [cursor=pointer]
+      - region "အကြွေးစာရင်း" [ref=e159]:
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - generic [ref=e162]:
+              - heading "ကိုယ့်ဆီက ငွေချေးယူထားသူများ" [level=2] [ref=e163]
+              - paragraph [ref=e164]: 0 Ks
+            - generic [ref=e165]:
+              - button "ငွေပြန်လက်ခံရန်" [disabled]
+              - button "ရရန်ရှိ" [ref=e166] [cursor=pointer]
+          - paragraph [ref=e169]: ချေးပေးထားသော မှတ်တမ်း မရှိသေးပါ။
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - generic [ref=e172]:
+              - heading "ကိုယ်က ငွေချေးယူထားသူများ" [level=2] [ref=e173]
+              - paragraph [ref=e174]: 40,000,000 Ks
+            - generic [ref=e175]:
+              - button "အကြွေးပြန်ဆပ်ရန်" [ref=e176] [cursor=pointer]
+              - button "ပေးရန်ကျန်" [ref=e180] [cursor=pointer]
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - generic [ref=e192]:
+                - link "Dad" [ref=e193] [cursor=pointer]:
+                  - /url: /people/a2261d69-350a-464a-afc3-0a8224ed59d2
+                - paragraph [ref=e194]: 1 အကြွေး
+              - paragraph [ref=e195]: 40,000,000 Ks
+            - generic [ref=e197]:
+              - generic [ref=e199]:
+                - paragraph [ref=e200]: အကြွေး · 21 Oct 2026
+                - generic [ref=e201]: အရင်ရှိပြီးသား
+              - generic [ref=e202]:
+                - generic [ref=e203]:
+                  - paragraph [ref=e204]: မူရင်းချေးငွေ
+                  - paragraph [ref=e205]: 40,000,000 Ks
+                - generic [ref=e206]:
+                  - paragraph [ref=e207]: ပြန်ပေးပြီး
+                  - paragraph [ref=e208]: 0 Ks
+                - generic [ref=e209]:
+                  - paragraph [ref=e210]: ပြန်ပေးရန်ကျန်ငွေ
+                  - paragraph [ref=e211]: 40,000,000 Ks
+              - generic [ref=e212]:
+                - paragraph [ref=e213]: ပြန်ပေးထားသည့် မှတ်တမ်း
+                - paragraph [ref=e214]: ပြန်ပေးထားမှု မရှိသေးပါ။
+      - region "မှတ်တမ်း" [ref=e215]:
+        - generic [ref=e216]:
+          - generic [ref=e217]:
+            - heading "မှတ်တမ်း" [level=2] [ref=e218]
+            - paragraph [ref=e219]: ငွေထည့်တာ၊ ရရန်ရှိ၊ ပေးရန်ကျန်နဲ့ ပြန်ဆပ်ငွေ အားလုံး။ ပြင်ရင် ဒါမှမဟုတ် ဖျက်ရင် လက်ကျန်ကို ပြန်တွက်ပေးမည်။
+          - list [ref=e221]:
+            - listitem [ref=e222]:
+              - generic [ref=e228]:
+                - generic [ref=e229]:
+                  - paragraph [ref=e230]:
+                    - text: ပေးရန်ကျန် ·
+                    - link "Dad" [ref=e231] [cursor=pointer]:
+                      - /url: /people/a2261d69-350a-464a-afc3-0a8224ed59d2
+                  - paragraph [ref=e232]: 40,000,000 Ks
+                - generic [ref=e233]:
+                  - generic [ref=e234]:
+                    - generic [ref=e235]: 21 Oct 2026
+                    - generic [ref=e236]: အရင်ရှိပြီးသား
+                  - generic [ref=e237]:
+                    - button "ပြင်ရန်" [ref=e238] [cursor=pointer]
+                    - button "ဖျက်ရန်" [ref=e242] [cursor=pointer]
+            - listitem [ref=e246]:
+              - generic [ref=e251]:
+                - generic [ref=e252]:
+                  - paragraph [ref=e253]: ငွေထည့်
+                  - paragraph [ref=e254]: +10,500,000 Ks
+                - generic [ref=e255]:
+                  - generic [ref=e256]:
+                    - generic [ref=e257]: 21 Oct 2026
+                    - generic [ref=e258]: E-money · Thwe Thwe Tint
+                  - generic [ref=e262]:
+                    - button "ပြင်ရန်" [ref=e263] [cursor=pointer]
+                    - button "ဖျက်ရန်" [ref=e267] [cursor=pointer]

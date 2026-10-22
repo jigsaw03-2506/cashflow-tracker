@@ -12,9 +12,9 @@ It does not provide transfers, reports, transaction search, or CSV tools.
 
 ## Security and sign-in
 
-There is **no authentication**: no login, signup, user accounts, or password flow. The Supabase service-role key is only read by server-side route handlers, never bundled into browser code. Row-level security is enabled and direct `anon`/`authenticated` table access is revoked; financial writes go through validated server routes and atomic PostgreSQL functions.
+The app has a **single password** (`APP_PASSWORD`) and no user accounts or signup. Every page and API route requires a signed-in session: `src/proxy.ts` redirects signed-out visits to `/login`, and each API route checks the session again before touching the database. Signing in sets an httpOnly cookie holding an expiry time signed with HMAC-SHA256; it lasts 30 days, and changing `APP_PASSWORD` or `SESSION_SECRET` signs every browser out. Wrong passwords are answered after a one-second delay. Use a long, unique password: there is no account lockout. The Supabase service-role key is only read by server-side route handlers, never bundled into browser code. Row-level security is enabled and direct `anon`/`authenticated` table access is revoked; financial writes go through validated server routes and atomic PostgreSQL functions.
 
-The development and production scripts bind to `127.0.0.1` so the application is intended for the trusted computer running it. Do not expose it directly to the public internet. If remote access is required, place it behind a private VPN or a network-restricted reverse proxy and firewall; there is intentionally no application sign-in. Same-origin checks on write routes are an additional CSRF defense, not a substitute for network isolation.
+The local development and production scripts bind to `127.0.0.1`. When deploying (for example to Vercel), serve the app over HTTPS only (the session cookie is `Secure` in production) and set the same four environment variables in the host's settings. Same-origin checks on write and sign-in routes are an additional CSRF defense.
 
 Do not add bank passwords, PINs, or OTPs.
 
@@ -28,7 +28,7 @@ Do not add bank passwords, PINs, or OTPs.
    - `supabase/migrations/20261021000300_opening_debt_money_type.sql`
    - `supabase/migrations/20261021000400_edit_delete_history.sql`
    - `supabase/migrations/20261021000500_records_for_person.sql`
-3. Copy `.env.example` to `.env.local`. In the Supabase project settings, copy the project URL and **service-role** key into the two server-only variables. Do not prefix these variables with `NEXT_PUBLIC_`, commit `.env.local`, or share the key.
+3. Copy `.env.example` to `.env.local`. In the Supabase project settings, copy the project URL and **service-role** key into the two server-only variables. Set `APP_PASSWORD` to a password of 12+ characters and `SESSION_SECRET` to a random value of 32+ characters (`openssl rand -base64 32`). Do not prefix these variables with `NEXT_PUBLIC_`, commit `.env.local`, or share the key.
 4. Install dependencies and start the local app:
 
    ```bash
@@ -36,7 +36,7 @@ Do not add bank passwords, PINs, or OTPs.
    npm run dev
    ```
 
-5. Open [http://127.0.0.1:3000](http://127.0.0.1:3000). The debt tracker opens directly; there is no sign-in step.
+5. Open [http://127.0.0.1:3000](http://127.0.0.1:3000). Sign in with `APP_PASSWORD`; the sign-out button is at the top right.
 
 Add each account with the balance it has now, then add people and record debts that already existed using the “already existed” option. Those opening debts do not change account balances. New lending and borrowing, and later repayments, update the selected account automatically.
 

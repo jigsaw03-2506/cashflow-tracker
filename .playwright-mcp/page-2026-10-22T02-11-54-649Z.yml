@@ -1,0 +1,13 @@
+- generic [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e24] [cursor=pointer]
+  - alert [ref=e17]: ငွေစာရင်း
+  - main [ref=e271]:
+    - button "Switch to English" [ref=e273] [cursor=pointer]: EN
+    - generic [ref=e275]:
+      - heading "ငွေစာရင်း" [level=1] [ref=e281]
+      - paragraph [ref=e282]: ဆက်လက်ရန် စကားဝှက်ကို ရိုက်ထည့်ပါ။
+      - generic [ref=e283]:
+        - generic [ref=e284]:
+          - text: စကားဝှက်
+          - textbox "စကားဝှက်" [active] [ref=e285]
+        - button "ဝင်ရန်" [disabled]
